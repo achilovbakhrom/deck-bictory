@@ -1,0 +1,67 @@
+
+extends layout
+
+block content    
+    div(class="submit-wrapper")
+        div(class="row")
+            
+            div(class="col-md-4 submit-form-left")
+                img(src="/images/main-bictory-logo.png" style="margin-left: 30px; margin-top: 30px;")
+                div(style="margin-top: 0px;" class="d-flex justify-content-center")
+                    img(src="/images/submit-form-left-image.png")
+                p(class="desc") Please be aware that all buyers of BT tokens will be subject to AML/KYC under British Virgin Islands (BVI) regulations. The AML/KYC regulations require that you provide certain additional information at a later stage. We do not accept purchase from US citizens or persons domiciled in the US, the Republic of China, the Democratic People's Republic of Korea, the Republic of Korea, Iran, Syria and Lebanon.
+                div(class="submit-bottom-title") Join our community
+                div(class="submit-bottom-socials")
+                    a(class="submit-bottom-link", href="https://t.me/BictoryFinance")
+                        img(src="/images/telegram-s.png")
+                    a(class="submit-bottom-link", href="https://twitter.com/Bictory_finance")
+                        img(src="/images/twitter-s.png")
+                    a(class="submit-bottom-link", href="https://www.linkedin.com/company/71744301")
+                        img(src="/images/inst-s.png")
+                    a(class="submit-bottom-link", href="https://bictory-finance.medium.com/")
+                        img(src="/images/medium-s.png")
+                    a(class="submit-bottom-link", href="https://www.reddit.com/user/Bictoryfinance/")
+                        img(src="/images/child-s.png")
+                    //a(class="submit-bottom-link", href="fd")
+                    //    img(src="/images/discord-s.png")
+                    a(class="submit-bottom-link", href="mailto:Marketing@bictory.io")
+                        img(src="/images/mail-s.png")
+            div(class="col-md-8 h-100 submit-form-right")
+                form(method="POST", action="/submit-form")
+                    p(style="font-size: 24px; font-weight: 500;") Please Fill the form below to register <br /> your interest in purchasing BT tokens.
+                    div(style="margin-top: 40px;")
+                        input(class="w-100 form-control input", placeholder="Person's full name" name="fullname" required)
+                    div(style="margin-top: 20px;")
+                        input(class="w-100 form-control input", placeholder="Company name (Relevant)" name="company_name" required)
+                    div(style="margin-top: 20px;")
+                        input(class="w-100 form-control input", placeholder="Business/Residential address (Full address, including building’s number, street, city, state, postal code)" name="address" required)
+                    div(style="margin-top: 20px;")
+                        input(class="w-100 form-control input", placeholder="Phone number" name="phone" required)
+                    div(style="margin-top: 20px;")
+                        input(class="w-100 form-control input", placeholder="Email" name="email" required)
+                    div(style="margin-top: 20px;")
+                        select(class="w-100 select form-select", placeholder="Nationality", name="nationality", required)
+                            option(value="") Please select Nationality
+                            for nationality in nationalities 
+                                option(value=nationality.id)= nationality.name
+                            
+                    div(style="margin-top: 20px;")
+                        select(class="w-100 select form-select", placeholder="Select preferred currency of purchase", name="currency", id="currency", required)
+                            option(value="") Please select Currency
+                            for currency in currencies 
+                                option(value=currency.id, data-tokens="1")= currency.name                            
+                    div(class="row", style="margin-top: 20px;")
+                        div(class="col-md-8")
+                            input(class="w-100 form-control input", id="value", placeholder="Value of BT you want to buy (in selected currency)" name="value" required)
+                        div(class="col-md-4")
+                            input(class="w-100 form-control input", readonly="true" id="convert")
+                    div
+                        div(class="form-check form-check-inline" style="margin-top: 30px;")
+                            input(class="form-check-input", type="checkbox", id="checkbox1", value="option1")
+                            label(class="form-check-label", for="inlineCheckbox1") I confirm that I have read and understood the information
+                    div
+                        div(class="form-check form-check-inline" style="margin-top: 10px;")
+                            input(class="form-check-input", type="checkbox", id="checkbox2", value="option1")
+                            label(class="form-check-label", for="inlineCheckbox1") I give my permission to store my personal data
+                    div
+                        button(type="submit", id="submit", class="btn btn-warning login-button w-100") SUBMIT FORM

@@ -1,0 +1,45 @@
+extends layout
+
+block content
+    
+    div(class="h-100")
+        div(class="d-flex flex-row justify-content-end align-items-center", style="height: 50px; padding-right: 30px;")
+            button(type="button", class="btn btn-primary", data-toggle="modal", data-target="#add_modal") Add user
+            a(href="/logout", style="margin-left: 20px;") Logout
+        div(class="modal fade", id="add_modal", data-backdrop="static", tabindex="-1", aria-hidden="true")
+            div(class="modal-dialog bg-white")
+                div(class="modal-content")
+                    div(class="modal-header")
+                        h5(class="modal-title") Add New User
+                    form(action="/create-user", method="POST", id="create-form")
+                        div(class="modal-body" style="padding: 10px;") 
+                            div(class="d-flex flex-column")
+                                input(placeholder="Username", class="form-control input", name="username")
+                                input(placeholder="Email", class="form-control input", name="email", style="margin-top: 20px;")
+                                input(placeholder="Password", class="form-control input", type="password", style="margin-top: 20px;", name="password")
+                                
+                        div(class="modal-footer" style="z-index: 5;")
+                            button(type="button", class="btn btn-secondary", data-dismiss="modal") Close
+                            button(type="button", class="btn btn-primary", onclick="closeModal()") Add User
+                
+                    
+        table(class="table")
+            thead
+                tr
+                    
+                    th(scope="col") ID
+                    th(scope="col") Username
+                    th(scope="col") Password
+                    th(scope="col") Active
+                    th(scope="col") Requests Count
+            
+            tbody
+                for element in userDto.rows
+                    tr                        
+                        td(scope="row")= element.id
+                        td= element.username
+                        td= element.password
+                        td
+                            input(data-id=element.id, onchange="toggle(this)" type="checkbox", data-toggle="toggle", data-on="Active", data-off="Not Active", data-size="small", checked=element.isActive, class=".my-toggle")
+                        td
+                            a(href="/messages/"+element.id)= element.messages.length

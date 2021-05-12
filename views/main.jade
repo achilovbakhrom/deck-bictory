@@ -1,0 +1,501 @@
+extends layout
+
+block content
+    div(class="position-relative h-100 overflow-hidden")
+        header(class="header-")
+            div(class="row")
+                div(class="col-md-3 d-block")
+                    div(class="header-logo-wrapper")
+                        a(href="")
+                            img(src="/images/logo.png")
+                div(class="col-md-9 d-block")
+                    div(class="header-right-content")
+                        div
+                            div(class="header-title") Private Sale B is Now Open.
+                            div(class="header-subtitle") Register Your Interest Now By Clicking on the Register for Offer button.
+                        div(class="header-button-wrapper")
+                            a(class="", href="/submit-form")
+                                button(class="btn btn-warning w-100 h-100") Register for Offer
+        div(class="row h-100")
+            div(class="col-md-3 d-block main-container__menu")
+                p(style="font-weight: 800;") This website is by invitation only
+                ul(id="main-menu")
+                    li About Bictory Finance
+                    li Benefits of Building on Concordium
+                    li Bictory Private Sale B Offer
+                    li Tokenomics
+                    li Bictory Finance Team
+                    li Bictory Roadmap
+                    li Funds Usage
+                    li Links and Resources
+                    li Press Releases
+            div(class="col-md-9 position-relative main-content")
+
+                div(class="w-100 main-content__header")
+                    img(src="/images/main-content-img.png")
+                    img(src="/images/main-content-mask1.png")
+                    img(src="/images/main-content-mask2.png")
+                    img(src="/images/main-bictory-logo.png", alt="main" class="logo")
+                    div(class="main-content__header--right")
+                        a(href="https://t.me/BictoryFinance")
+                            img(class="icon" src="/images/telegram-header.png")
+                        a(href="https://twitter.com/Bictory_finance")
+                            img(class="icon" src="/images/twitter-header.png")
+                        a(href="https://bictory-finance.medium.com/")
+                            img(class="icon" src="/images/medium-header.png")
+                        a(href="mailto:Marketing@bictory.io")
+                            img(class="icon" src="/images/mail-header.png")
+                    div(class="main-content__bottom")
+                        div(class="d-flex flex-row align-items-center")
+                            div(class="flex-grow-1")
+                                div(style="font-weight: 500; font-size: 30px; line-height: 36px;") Private Sale B is now open.
+                                div(style="font-weight: 400; font-size: 16px; line-height: 36px;") Do indicate your interest by clicking the “Register for Offer” Button.
+                            div(class="d-flex align-items-center" style="width: 250px; height: 45px;")
+                                a(class="w-100 h-100", href="/submit-form")
+                                    button(class="btn btn-warning w-100 h-100") Register for Offer
+
+
+                div(style="margin-top: 25px; margin-left: 15px;")
+                    p
+                        <b>Seed sale </b>has been completed with investment from the founding team,
+                        br
+                        | family and friends with <b>$300, 000</b> USD raised.
+                div(style="margin-top: 25px; margin-left: 15px;")
+                    p
+                        | <b>Private Sale A</b> has been completed with investments from value-adding
+                        br
+                        | individuals and VCs with <b>$1,050,000 USD</b> raised in total.
+                div(class="hr")
+                div(style="margin-top: 25px; margin-left: 15px;")
+                    p
+                        | Bictory Finance is developing a suite of financial products that enables developers, liquidity providers,
+                        br
+                        | creators and traders on Concordium to raise capital, trade crypto and provide liquidity.
+                div(class="main-content__caption")
+                    img(src="/images/caption-icon.png")
+                    div(style="margin-left: 15px;", id="about_bictory") About Bictory Finance
+                p(style="margin-right: 200px; margin-top: 20px; text-align: justify;") Bictory Finance is the first holistic DeFi solution to be deployed on the Concordium Network. Concordium being a blockchain with smart contract layer for business with focus on low and stable transaction costs and ID-verified participation. The choice to build on the Concordium Network, apart from the robust tech, is because of the protocol-level ID layer, any person, company on entity with an identity can get an account on Concordium, which invariably gives access to the slew, Centralized, decentralized exchange and a crowdfunding platform of financial products on Bictory Finance.
+                p(style="margin-top: 20px; margin-right: 200px; text-align: justify;") Sophisticated interoperability, Concordium’s deployment of the sharding mechanism which enables interoperability and communication between sub-blockchains (shards), Concordium and other blockchains.
+
+
+                div(class="main-content__caption")
+                    img(src="/images/caption-icon.png")
+                    div(style="margin-left: 15px;", id="benefits") Benefits of Building on Concordium
+                div(class="adventage") Fast and secure finality at scale:
+                p(style="margin-right: 280px; text-align: justify;") Transactions on the Concordium Platform are finalized and immutable without relying on the creation of subsequent blocks. Its unique two-layer consensus doesn’t compromise speed for security or vice versa. <a href="http://deck.concordium.com/wp-content/uploads/2020/11/Consensus-One-pager-12-November-2020.docx.pdf" target="_blank" style="font-style: italic;"> <br> Read More </a>.
+
+                div(class="adventage") Identity Layer.
+                p(style="margin-right: 280px; text-align: justify;") Concordium’s innovative Identity Layer at the protocol level offers transactional privacy whilst allowing accountability to relevant regulators. 
+                div(style="margin-top: 0;") <a target="_blank" href="http://deck.concordium.com/wp-content/uploads/2020/10/10.-User-Journey-a.pdf" style="font-style: italic; text-decoration: underline"> 1. Concordium User Journey </a>
+                div(style="margin-top: 0;") <a target="_blank" href="http://deck.concordium.com/wp-content/uploads/2020/12/ID-Issuers-and-Verifiers-One-pager-20-September-2020.docx.pdf" style="font-style: italic; text-decoration: underline"> 2. Identity Issuers </a>
+                div(style="margin-top: 0;") <a target="_blank" href="http://deck.concordium.com/wp-content/uploads/2020/10/Anonymity-Revokers-a.pdf" style="font-style: italic; text-decoration: underline"> 3. Anonymity Revoker </a>
+
+                div(class="adventage") Private Transactions.
+                p(style="margin-right: 280px; text-align: justify;") Concordium supports encrypted transfers using a zero-knowledge proof mechanism that allows every party to validate transactions without knowing the transferred amount. <a href="http://deck.concordium.com/wp-content/uploads/2020/10/Zero-Knowledge-Proofs-.docx.pdf" target="_blank" style="font-style: italic;"> Learn More. </a>
+
+                div(class="adventage") Increase capacity with Sharding.
+                p(style="margin-right: 280px; text-align: justify;") The throughput of the blockchain can be extended by any number of fast and optimized shards in parallel. The sharding Protocol also allows for Intershard signaling and Private shards. <a href="http://deck.concordium.com/wp-content/uploads/2021/03/Sharding-1.1-1.pdf" target="_blank" style="font-style: italic;"> Learn More. </a>
+
+                div(class="adventage") Stable Transaction Fees.
+                p(style="margin-right: 280px; text-align: justify;") Concordium is a Blockchain for business, it will be the first to bring predicability of transaction cost to public, permission-less network. <a target="_blank" href="http://deck.concordium.com/wp-content/uploads/2020/10/Concordium-Transaction-Fees-a.pdf" style="font-style: italic;"> Learn More. </a>
+
+                div(class="adventage") Energy-efficient delegated Proof of Stake:
+                p(style="margin-right: 280px; text-align: justify;") Proof of Stake (​PoS​) mechanism ensures a green and resource-efficient operation along with enhanced security among participants. Users that hold GTU in their account can either run their own node or delegate their GTU to a baker. The more stake that participates, the harder it becomes for malicious parties to control a majority of that stake. Staking is maximized by delegation.
+
+                div(class="main-content__caption")
+                    img(src="/images/caption-icon.png")
+                    div(style="margin-left: 15px;", id="bictory_private") Bictory Private Sale B Offer
+                p(style="margin-right: 200px; margin-top: 20px; text-align: justify;") Development has been going on for over a year now, and a major part of the Bictory CEX has been developed. The Alpha version will be launched at the end of May 2021 and open to a select group for private testing and debugging. Currently, the team is working on research and development with existing Concordium documentation on effective ways to develop the Bictory DEX and the decentralized Crowdfunding platform.
+
+                ul
+                    li
+                        p Funds raised will be utilized in future operating cost which includes company incorporation, products (CEX, DEX, decentralized crowdfunding) development, community building, promotion, team recruitment and payroll.
+                    li
+                        p BT token price is at <span style="color: #F5B941; font-weight: 500;">$0.60</span> per BT
+                    li
+                        p Total token allocated for this round is <b>3,000,000 BT</b> tokens
+                    li
+                        p Minimum purchase amount is $5,000 and the maximum is $20,000.
+                    li
+                        p Token Release: 15% at TGE, by 15% every 3 months.
+                    li
+                        p All purchasers are subject to KYC in accordance to standard investment regulations.
+                    li
+                        p Only purchaser willing to bear the risk should purchase BT tokens
+
+                div(class="info-") *TGE: Token Generation Event.
+
+                div(class="hr")
+
+
+                div(class="main-content__caption" style="margin-top: 20px;")
+                    img(src="/images/caption-icon.png")
+                    div(style="margin-left: 15px;", id="tokenomics") Tokenomics
+
+                p(style="margin-right: 200px; margin-top: 20px; text-align: justify;") The total token supply (100 million BT tokens) will be distributed as shown in the diagram below. As previously stated, the token supply will be fixed during the Token Generation Event hence no further token creation will be possible.
+
+                div(class="row")
+                    div(class="col-md-4 d-block")
+                        div(class="token-card")
+                            div(class="token-card__header") Token Data
+                            div(class="token-card__body")
+                                div Token Ticker: &nbsp; &nbsp; <span style="color: #FFB703;"> BT </span>
+                                div Total Supply: &nbsp; &nbsp; <span style="font-weight: 600; color: white;"> 100,000,000 </span> <span style="font-size: 11px;"> (One hundred Million) </span>
+                                div Platform: &nbsp; &nbsp; <span style="font-weight: 600; color: white;"> Concordium </span>
+                                div Explorer: &nbsp; &nbsp; <span style="font-weight: 600; color: #3BF1A5;"> Concordiumscan.placeholder </span>
+                        div(class="token-card" style="margin-top: 20px;")
+                            div(class="token-card__header") Token Distribution
+                            div(class="token-card__body" style="color: white;")
+                                div Token Sale: &nbsp; &nbsp; <span style="font-weight: 600; color: white;"> 25% </span><span style="font-size: 10px;"> (Seed + Private + Public Sales) </span>
+                                div
+                                    div(class="sale-color- sale-color--red")
+                                    | Seed Sale: &nbsp; &nbsp; <span style="font-weight: 600; color: white;"> 2% </span>
+                                    span(class="sale-amount-") (2 Million tokens)
+                                div
+                                    div(class="sale-color- sale-color--private")
+                                    | Private Sale: &nbsp; &nbsp; <span style="font-weight: 600; color: white;"> 19% </span>
+                                    span(class="sale-amount-") (19 Million tokens)
+                                div
+                                    div(class="sale-color- sale-color--public")
+                                    | Public Sale: &nbsp; &nbsp; <span style="font-weight: 600; color: white;"> 4% </span>
+                                    span(class="sale-amount-") (4 Million tokens)
+                                <div class="hr"> </div>
+                                div
+                                    div(class="sale-color- sale-color--platform")
+                                    | Platform Growth 28%: &nbsp; &nbsp; <span style="font-weight: 600; color: white;"> 28% </span>
+                                    span(class="sale-amount-") (28 Million tokens)
+                                div
+                                    div(class="sale-color- sale-color--founding")
+                                    | Founding Team: 15%: &nbsp; &nbsp; <span style="font-weight: 600; color: white;"> 15% </span>
+                                    span(class="sale-amount-") (15 Million tokens)
+                                div
+                                    div(class="sale-color- sale-color--strategic")
+                                    | Strategic Partners: 5%: &nbsp; &nbsp; <span style="font-weight: 600; color: white;"> 5% </span>
+                                    span(class="sale-amount-") (5 Million tokens)
+                                div
+                                    div(class="sale-color- sale-color--advisors")
+                                    | Advisors: 2%: &nbsp; &nbsp; <span style="font-weight: 600; color: white;"> 2% </span>
+                                    span(class="sale-amount-") (2 Million tokens)
+                                div
+                                    div(class="sale-color- sale-color--community")
+                                    | Community Reward: 25%: &nbsp; &nbsp; <span style="font-weight: 600; color: white;"> 25% </span>
+                                    span(class="sale-amount-") (25 Million tokens)
+                    div(class="col-md-8 d-block")
+                        div(class="token-chart")
+                            img(src="/images/chart1.svg")
+
+                div(class="token-utility")
+                    div(class="token-utility__title") Token Utility.
+                    p Token functions of BT tokens in our ecosystem are as follows:
+                    div
+                        img(src="/images/frame-1.png")
+                        img(src="/images/Frame 8.png" style="margin-left: 15px;")
+
+                    div(style="margin-top: 15px;")
+                        img(src="/images/Frame 9.png")
+                        img(src="/images/Frame 10.png" style="margin-left: 15px;")
+
+                div(class="token-utility" style="margin-top: 50px;")
+                    p(class="token-utility__title") Token Release Schedule.
+                    div(style="padding: 0 10px;")
+                        div(class="row table-row")
+                            div(class="col-md-4 table-cell table-cell-border") Seed Sale
+                            div(class="col-md-4 table-cell table-cell-border") 15% to be released 6 months after first listing
+                            div(class="col-md-4 table-cell") 15% to be released every 3 months after first release
+                        div(class="row table-row")
+                            div(class="col-md-4 table-cell table-cell-border") Private Sale                        
+                            div(class="col-md-4 table-cell table-cell-border") 15% to be released at TGE*                        
+                            div(class="col-md-4 table-cell") 15% to be released every 3 months after first release.
+                        div(class="row table-row")
+                            div(class="col-md-4 table-cell table-cell-border") Public Sale
+                            div(class="col-md-4 table-cell table-cell-border") Not Vested                        
+                            div(class="col-md-4 table-cell") Not Vested
+                        div(class="row table-row")
+                            div(class="col-md-4 table-cell table-cell-border") Founding Team                        
+                            div(class="col-md-4 table-cell table-cell-border") 10% to be released 6 months after first listing.
+                            div(class="col-md-4 table-cell") 10% to be released every 3 months after first release.
+                        div(class="row table-row")
+                            div(class="col-md-4 table-cell table-cell-border") Strategic Partners
+                            div(class="col-md-4 table-cell table-cell-border") 15% to be released 6 months after first listing.
+                            div(class="col-md-4 table-cell") 15% to be released every 3 months after first release.
+                        div(class="row table-row")
+                            div(class="col-md-4 table-cell table-cell-border") Advisors                        
+                            div(class="col-md-4 table-cell table-cell-border") 10% to be released 6 months after first listing.                        
+                            div(class="col-md-4 table-cell") 15% to be released every 3 months after first release.
+                div(class="hr" style="margin: 60px 0;")
+
+                div(class="main-content__caption" style="margin-top: 20px;")
+                    img(src="/images/caption-icon.png")
+                    div(style="margin-left: 15px;", id="team") Bictory Finance Team
+
+                div(class="team-section")
+                    div(class="team-title") Core Team
+                    div(class="team-item")
+                        div(class="row")
+                            div(class="col-md-3 d-block")
+                                div(class="member-image")
+                                    img(src="/images/joha.png")
+                                div(class="member-links")
+                                    a(target="_blank", href="https://twitter.com/joha_bictory?s=21", class="member-link")
+                                        img(src="/images/twitter-m.png")
+                                    a(target="_blank", href="http://linkedin.com/in/joha-j-sulaymonov-523299117", class="member-link")
+                                        img(src="/images/linked-m.png")
+                            div(class="col-md-9 d-block")
+                                div(class="member-name") Joha J. Sulaymonov
+                                    span(class="member-position") Project Lead
+                                div(class="member-desc") Joha worked as Korean Business and marketing lead of Beam and Chief Strategy Officer in Sovereign Wallet Network. Joha has been member of Bitcoin Center Korea and helped dozens of blockchain and crypto projects to grow. He earned his BA in Business Administration and Business Management from SEGi University (Malaysia) in collaboration with the University of Sunderland (UK). Master's degree in Economics from Yonsei University (South Korea).
+                    div(class="team-item")
+                        div(class="row")
+                            div(class="col-md-3 d-block")
+                                div(class="member-image")
+                                    img(src="/images/agbona.png")
+                                div(class="member-links")
+                                    a(target="_blank", href="https://twitter.com/aagbona", class="member-link")
+                                        img(src="/images/twitter-m.png")
+                                    a(target="_blank", href="http://linkedin.com/in/agbona", class="member-link")
+                                        img(src="/images/linked-m.png")
+                            div(class="col-md-9 d-block")
+                                div(class="member-name") Agbona Igwemoh
+                                    span(class="member-position") Operation Lead
+                                div(class="member-desc") Agbona is a prolific Entrepreneur dating back to his university days at one of Africa’s top universities. He has co-founded several startups in tech, energy, and manufacturing and has  worked across the board in various capacities including marketing and operations. He made his entry into the crypto space in ealy 2018, via the Steem blockchain, joined Beam Privacy as its first Africa lead, helping in the creation and management of Beam Africa, consisting of a team of African ambassadors. Beam Africa took a leading role in the development of the Beam Outreach platform. He’s also worked briefly with other crypto/blockchain projects such as AgricBlock, Unipool DAO, SWNGlobal and Kylin in various capacity.
+                    div(class="team-item")
+                        div(class="row")
+                            div(class="col-md-3 d-block")
+                                div(class="member-image")
+                                    img(src="/images/bakrhom.png")
+                                div(class="member-links")
+                                    a(target="_blank", href="", class="member-link")
+                                        img(src="/images/twitter-m.png")
+                                    a(target="_blank", href="", class="member-link")
+                                        img(src="/images/linked-m.png")
+                            div(class="col-md-9 d-block")
+                                div(class="member-name") Bakhrom Achilov
+                                    span(class="member-position") Engineering Lead
+                                div(class="member-desc") Bakhrom is a Senior Infrastructure and Security Engineer with a track record of building scalable and secure products designed for business growth, organizational development optimized for maximal security and scalability at a global level. Bakhrom comes with over 5 years of experience in building blockchain solutions, smart contracts and exchanges, making him the ideal candidate to orchestrate development across all of Bictory's projects.
+                    div(class="team-item")
+                        div(class="row")
+                            div(class="col-md-3 d-block")
+                                div(class="member-image")
+                                    img(src="/images/rafael.png")
+                                div(class="member-links")
+                                    a(target="_blank", href="", class="member-link")
+                                        img(src="/images/twitter-m.png")
+                                    a(target="_blank", href="http://linkedin.com/in/rafael-scrooppi", class="member-link")
+                                        img(src="/images/linked-m.png")
+                            div(class="col-md-9 d-block")
+                                div(class="member-name") Yakshimbetov Rafael
+                                    span(class="member-position") Full Stack Developer
+                                div(class="member-desc") Rafael is a versatile, results-driven professional with 3+ years of comprehensive experience developing CRM systems, web sites, SPA, PWA. Proven problem solving and analytical thinking skills, a fast-learning curve, and the ability to adapt to evolving industry trends. A dedicated professional with the drive and skill-set to excel in a fast-based javascript developer role enhancing a company's ability to capture profitable markets.
+                    div(class="team-item")
+                        div(class="row")
+                            div(class="col-md-3 d-block")
+                                div(class="member-image")
+                                    img(src="/images/groot.png")
+                                div(class="member-links")
+                                    a(target="_blank", href="https://twitter.com/wizzyblast11?s=21", class="member-link")
+                                        img(src="/images/twitter-m.png")
+                                    a(target="_blank", href="https://www.linkedin.com/in/wisdom-augustine-929548164/", class="member-link")
+                                        img(src="/images/linked-m.png")
+                            div(class="col-md-9 d-block")
+                                div(class="member-name") Augustine Wisdom (Groot)
+                                    span(class="member-position") Product Design Lead
+                                div(class="member-desc") Groot is a User Experience Design professional who has dabbled in the crypto space for over 3 years now, after his introduction to the industry through blockchain social media. He specializes in User Research and in creating usable, interactive interfaces for crypto and Web3 products and services. He’s had several experiences working with/contrubuting to diverse projects including Sprinthub Mobile, HaggleX, NiftyMuseum, Beam Privacy and HNG Internship over time.
+
+                    div(class="team-item")
+                        div(class="row")
+                            div(class="col-md-3 d-block")
+                                div(class="member-image")
+                                    img(src="/images/obid.png")
+                                div(class="member-links")
+                                    a(target="_blank", href="https://twitter.com/Obidjon77", class="member-link")
+                                        img(src="/images/twitter-m.png")
+                                    a(target="_blank", href="https://www.linkedin.com/in/obidjon-nurmatov-698b89210/", class="member-link")
+                                        img(src="/images/linked-m.png")
+                            div(class="col-md-9 d-block")
+                                div(class="member-name") Obidjon Nurmatov
+                                    span(class="member-position") Business Development
+                                div(class="member-desc") Obidjon comes from a business and management background, with strong leadership and management ability. He completed his education in International Business at James Cook University, Singapore. He will be tasked with implementing Bictory Finance business plans and growth endeavours within the Euroasian region where he is currently based. As the project's Business Manager for Euroasia, he will utilize his strong network of professionals within the blockchain and cryptocurrency space to achieve company objectives.
+
+
+                    div(class="team-title team-title--green") Advisors
+
+                    div(class="team-item")
+                        div(class="row")
+                            div(class="col-md-3 d-block")
+                                div(class="member-image")
+                                    img(src="/images/dylan.png")
+                                div(class="member-links")
+                                    a(target="_blank", href="", class="member-link")
+                                        img(src="/images/twitter-m.png")
+                                    a(target="_blank", href="https://www.linkedin.com/in/dylan-dewdney/", class="member-link")
+                                        img(src="/images/linked-m.png")
+                            div(class="col-md-9 d-block")
+                                div(class="member-name") Dylan Dewdney.
+                                    span(class="member-position") Strategic Advisor and Investor
+                                div(class="member-desc") Dylan is a longtime crypto enthusiast (Since 2011). In 2017, he co-founded Harbour DAO, which became an open-standard set of tools for building governance structures and voting mechanisms on ERC-20. Later, as Chief Evangelist of Beam and Head of Growth for AdEx, he was a key part of their GTM and general growth strategies. Dylan is a respected peer among many different projects and areas of business. He is currently the CEO of Kylin Network and one of the investors in Bictory Finance.
+
+                    div(class="hr" style="margin: 60px 0;")
+
+                    div(class="main-content__caption" style="margin-top: 20px;")
+                        img(src="/images/caption-icon.png")
+                        div(style="margin-left: 15px;", id="roadmap") Roadmap
+
+                    div(class="roadmap-list")
+                        div(class="row")
+                            div(class="col-md-6 d-block")
+                                div(class="road-item__wrapper")
+                                    div(class="road-item")
+                                        div(class="road-item-cube")
+                                        div(class="road-item-title") Q1 2021 PLANS
+                                        div(class="road-item-list")
+                                            div(class="road-item-list_item")
+                                                div(class="road-decor-item")
+                                                div(class="road-list-text") Recruitment and Team Assembly
+                                            div(class="road-item-list_item")
+                                                div(class="road-decor-item")
+                                                div(class="road-list-text") Development of Bictory CEX
+                                            div(class="road-item-list_item")
+                                                div(class="road-decor-item")
+                                                div(class="road-list-text") Marketing Analysis, R&D
+
+                            div(class="col-md-6 d-block")
+                                div(class="road-item__wrapper")
+                                    div(class="road-item road-item--green")
+                                        div(class="road-item-cube")
+                                        div(class="road-item-title") Q2 2021 PLANS
+                                        div(class="road-item-list")
+                                            div(class="road-item-list_item")
+                                                div(class="road-decor-item")
+                                                div(class="road-list-text") Bictory Integration with Cocordium
+                                            div(class="road-item-list_item")
+                                                div(class="road-decor-item")
+                                                div(class="road-list-text") Alpha Launch: Bictory CEX
+                                            div(class="road-item-list_item")
+                                                div(class="road-decor-item")
+                                                div(class="road-list-text") Research & Development: Bictory DEX
+                                            div(class="road-item-list_item")
+                                                div(class="road-decor-item")
+                                                div(class="road-list-text") Research & Development: Bictory <Crowdfunding></Crowdfunding>
+
+                            div(class="col-md-6 d-block")
+                                div(class="road-item__wrapper")
+                                    div(class="road-item road-item--yellow")
+                                        div(class="road-item-cube")
+                                        div(class="road-item-title") Q3 2021 PLANS
+                                        div(class="road-item-list")
+                                            div(class="road-item-list_item")
+                                                div(class="road-decor-item")
+                                                div(class="road-list-text") Concordium Grant Application
+                                            div(class="road-item-list_item")
+                                                div(class="road-decor-item")
+                                                div(class="road-list-text") Aggressive Marketing Campaigns
+                                            div(class="road-item-list_item")
+                                                div(class="road-decor-item")
+                                                div(class="road-list-text") Beta Launch: Bictory CEX
+                                            div(class="road-item-list_item")
+                                                div(class="road-decor-item")
+                                                div(class="road-list-text") Alpha Launch: Bictory Dex and Crowdfunding
+
+                            div(class="col-md-6 d-block")
+                                div(class="road-item__wrapper")
+                                    div(class="road-item road-item--blue")
+                                        div(class="road-item-cube")
+                                        div(class="road-item-title") Q4 2021 PLANS
+                                        div(class="road-item-list")
+                                            div(class="road-item-list_item")
+                                                div(class="road-decor-item")
+                                                div(class="road-list-text") Beta Launch of Bictory Crowdfunding.
+                                            div(class="road-item-list_item")
+                                                div(class="road-decor-item")
+                                                div(class="road-list-text") Public Sale begins on Bictory Crowdfunding
+
+                    div(class="hr" style="margin: 60px 0;")
+
+                    div(class="main-content__caption" style="margin-top: 20px;")
+                        img(src="/images/caption-icon.png")
+                        div(style="margin-left: 15px;", id="fund_usage") Fund Usage
+
+                    p(style="margin-right: 200px; margin-top: 20px;") Financing is significant for any ambitious project, especially if they're building financial products on a global scale like what we are working on achieving at Bictory Finance. The 3 distinct products of Bictory Finance; the CEX, DEX, and Crowdfunding platform, requires active marketing to attract a loyal and active users base. The development, research and operation of the project requires adequate resources. There are several plans and ongoing project development.
+
+                    div(class="text-title") Technology.
+                    p(class="text-") Getting the technology right is an important aspect of our success journey at Bictory Finance. We will be expending resources to utilze suitable and advanced technologies, attract the right individuals to improve quality among our ranks, and bolster the security of the platform to build secure, scalable and user-friendly products.
+
+                    div(class="text-title") Product/Market Research.
+                    p(class="text-") Bictory Finance will be heavily involved in Product and Market Research as we continue building out our platforms across different blockchain ecosystems that we intend to expand to (DOT, ETH, SOL, BSC). We will be developing and testing out various crowdfunding and exchange market prototypes in a controlled environment to validate business models and uncover more usecases before proper launches on Mainnet.
+
+                    div(class="text-title") Product/Market Research.
+                    p(class="text-") Bictory Finance will be heavily involved in Product and Market Research as we continue building out our platforms across different blockchain ecosystems that we intend to expand to (DOT, ETH, SOL, BSC). We will be developing and testing out various crowdfunding and exchange market prototypes in a controlled environment to validate business models and uncover more usecases before proper launches on Mainnet.
+
+                    div(class="text-title") Legal and professional advisors.
+                    p(class="text-") Bictory Finance will need legal and professional advisors to help navigate the murky waters of legal regulations and obligations in the US and other important markets. Starting from basic incorporation paperwork to understanding liability issues and reviewing contracts to ensure that we are complying with the law.
+
+                    div(class="text-title") Technical and customer support.
+                    p(class="text-") Community and users are at the core of what Bictory Finance is building and we will be assigning a dedicated team of professionals to keep up with product maintenance, collect feedback and meaningful data, as well as cater for whatever technical and non-technical challenges that our users might face.
+
+                    div(class="main-content__caption" style="margin-top: 20px;")
+                        img(src="/images/caption-icon.png")
+                        div(style="margin-left: 15px;", id="links_resources") Links and Resources
+
+                    div(class="resource-wrapper")
+
+                        div(class="resource-links-desc") You can also contact us by reaching out to any of our socials below.
+                        div(class="resource-social-list")
+                            a(class="resource-social-link", target="_blank", href="https://bictory.io/")
+                                img(src="/images/web.png")
+                                span Website
+                            a(class="resource-social-link", target="_blank", href="https://twitter.com/Bictory_finance")
+                                img(src="/images/twitter.png")
+                                span Twitter
+                            a(class="resource-social-link", target="_blank", href="https://t.me/BictoryFinance")
+                                img(src="/images/telegram.png")
+                                span Telegram
+                            a(class="resource-social-link", target="_blank", href="mailto:Marketing@bictory.io")
+                                img(src="/images/mail.png")
+                                span Contact Us
+                            a(class="resource-social-link", target="_blank", href="https://bictory-finance.medium.com")
+                                img(src="/images/web.png")
+                                span Medium
+                            a(class="resource-social-link", target="_blank", href="https://bictory.io/b_litepaper.pdf")
+                                img(src="/images/page.png")
+                                span Litepaper
+                            a(class="resource-social-link", target="_blank", href="https://bictory.io/one_pager.pdf")
+                                img(src="/images/page.png")
+                                span One-Pager
+
+                    div(class="main-content__caption" style="margin-top: 20px;")
+                        img(src="/images/caption-icon.png")
+                        div(style="margin-left: 15px;", id="press_releases") Press Releases
+
+                    div(class="news-section")
+                        div(class="row")
+                            div(class="col-md-4 d-block")
+                                a(href="https://bictory-finance.medium.com/bictory-finance-onboards-the-ceo-of-kylin-network-dylan-dewdney-as-its-strategic-advisor-and-1961031bd239")
+                                    div(class="news-item-wrapper")
+                                        div(class="news-item")
+                                            div(class="news-image")
+                                                img(class="news-image-bg", src="/images/news1.png", style="object-fit: contain;")
+                                            div(class="news-title") Bictory Finance Onboards The CEO of Kylin Network, Dylan Dewdney as...
+                                            div(class="news-bottom-section")
+                                                div(class="news-date") 02/05/2021
+                                                div(class="news-resource") Bictory Finance, Medium
+
+                            div(class="col-md-4 d-block")
+                                a(href="https://bictory-finance.medium.com/hybrid-exchange-and-crowdfunding-platform-on-concordium-blockchain-introducing-bictory-finance-8ce18826afc8")
+                                    div(class="news-item-wrapper")
+                                        div(class="news-item")
+                                            div(class="news-image")
+                                                img(class="news-image-bg", src="/images/news2.png", style="object-fit: contain;")
+                                            div(class="news-title") Hybrid Exchange and Crowdfunding Platform on Concordium Blockchain...
+                                            div(class="news-bottom-section")
+                                                div(class="news-date") 16/04/2021
+                                                div(class="news-resource") Bictory Finance, Medium
+                            div(class="col-md-4 d-block")
+                                a(href="https://t.co/XUhAdP1SQG?amp=1")
+                                    div(class="news-item-wrapper")				    
+                                        div(class="news-item")
+                                            div(class="news-image")
+                                                img(class="news-image-bg", src="/images/news3.png", style="object-fit: contain;")
+                                            div(class="news-title") Bictory FinanceにKylin NetworkのCEOであるDylan Dewdney氏を戦略アドバイザー兼投資家として迎え入れます
+                                            div(class="news-bottom-section")
+                                                div(class="news-date") 07/05/2021
+                                                div(class="news-resource") Bictory Japan, Medium

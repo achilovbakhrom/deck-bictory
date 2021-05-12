@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    div(class='h-100 login-container')
+        div(class="login-content h-100 d-flex flex-row")
+            div(class="col-md-5 h-100 d-block position-relative login-content__left")
+                img(src="/images/bictory_full_logo.png")
+                h1 Welcome User
+                p Access to this site is by invitation only. 
+                img(src="/images/auth_bottom_img.png", class="bottom_img")
+
+            div(class="col-md-7 login-content__right h-100 d-flex align-items-center position-relative")
+                div(class="d-block form-group w-100")
+                    h2 Login to deck.bictory
+                    p Provide Email and Password to Log in.
+                    form(class="needs-validation" action="/auth" method="POST")
+                        input(class="w-100 form-control input", placeholder="Username" name="username" required)
+                        input(class="w-100 form-control input", type="password", placeholder="Password" style="margin-top: 20px;" name="password" required)
+                        button(type="submit", class="btn btn-warning login-button w-100") LOGIN
+                    img(src="/images/auth_right_bottom.png", class="w-100 bottom_img")
+
+
+        

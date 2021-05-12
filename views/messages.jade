@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    
+    div(class="h-100")
+        div(class="d-flex flex-row justify-content-end align-items-center", style="height: 50px; padding-right: 30px;")
+            a(href="/logout", style="margin-left: 20px;") Logout        
+                    
+        table(class="table")
+            thead
+                tr
+                    
+                    th(scope="col") ID
+                    th(scope="col") Fullname
+                    th(scope="col") Company Name
+                    th(scope="col") Address
+                    th(scope="col") Phone
+                    th(scope="col") Amount
+                    th(scope="col") Currency
+                    th(scope="col") Created At
+                    th(scope="col") Nationality
+            
+            tbody
+                for element in messages
+                    tr                        
+                        td(scope="row")= element.id
+                        td= element.fullname
+                        td= element.company_name
+                        td= element.address
+                        td= element.phone
+                        td= element.amount
+                        td= element.currency ? element.currency.name : "-"
+                        td= element.createdAt
+                        td= element.nationality ? element.nationality.name : "-"
