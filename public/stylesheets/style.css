@@ -329,7 +329,7 @@ a {
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 70px;
-  color: #F0F0F0;
+  color: rgba(240, 240, 240, 0.7);
   line-height: 23px;
   size: 13px;
   font-weight: 400;
@@ -337,7 +337,7 @@ a {
 }
 
 .submit-form-right {
-  padding: 55px 180px 55px 120px;
+  padding: 55px 280px 55px 280px;
   background-color: #B9B9B96C;
 
 }
