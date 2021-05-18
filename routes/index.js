@@ -171,6 +171,7 @@ router.get("/submit-form", [authJwt.verifyToken], function(req, res, next) {
 
 
 router.post("/submit-form", [authJwt.verifyToken], function(req, res, next) {    
+  console.log("email", req.body.email)
   db.message.create({    
     userId: req.userId,
     fullname: req.body.fullname,

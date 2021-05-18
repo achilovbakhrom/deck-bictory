@@ -30,21 +30,20 @@ block content
                 form(method="POST", action="/submit-form")
                     p(style="font-size: 24px; font-weight: 500;") Please Fill the form below to register <br /> your interest in purchasing BT tokens.
                     div(style="margin-top: 40px;")
-                        input(class="w-100 form-control input", placeholder="Person's full name" name="fullname" required)
+                        input(class="w-100 form-control input", placeholder="Full name" name="fullname" required)
+                    div(style="margin-top: 20px;")
+                        input(class="w-100 form-control input", placeholder="Email" name="email" required)
                     div(style="margin-top: 20px;")
                         input(class="w-100 form-control input", placeholder="Company name (Relevant)" name="company_name" required)
                     div(style="margin-top: 20px;")
                         textarea(class="w-100 form-control input", rows="3", placeholder="Business/Residential address (Full address, including building’s number, street, city, state, postal code)" name="address" required)
                     div(style="margin-top: 20px;")
-                        input(class="w-100 form-control input", placeholder="Phone number" name="phone" required)
-                    div(style="margin-top: 20px;")
-                        input(class="w-100 form-control input", placeholder="Email" name="email" required)
+                        input(class="w-100 form-control input", placeholder="Phone number" name="phone" required)                    
                     div(style="margin-top: 20px;")
                         select(class="w-100 select form-select", placeholder="Nationality", name="nationality", required)
                             option(value="") Please select Nationality
                             for nationality in nationalities 
-                                option(value=nationality.id)= nationality.name
-                            
+                                option(value=nationality.id)= nationality.name                            
                     div(style="margin-top: 20px;")
                         select(class="w-100 select form-select", placeholder="Select preferred currency of purchase", name="currency", id="currency", required)
                             option(value="") Please select Currency
