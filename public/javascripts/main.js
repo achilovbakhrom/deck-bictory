@@ -113,10 +113,10 @@ $(document).ready(function(){
 
     $("#currency").change(function() {
         let value = $("#value").val();
-        let currency = $("#currency").val();
-        if (value && currency) {
-            let currencyName = currency === 1 ? "USDT" : "USDC";
-            $("#convert").val(`${value} ${currencyName} - ${value * 0.6} BT`)
+        let currency = $("#currency").val();        
+        if (value && currency) {            
+            let currencyName = Number(currency) === 1 ? "USDT" : "USDC";
+            $("#convert").val(`${value} ${currencyName} - ${Number(value/0.6).toFixed(2)} BT`)
         } else {
             $("#convert").val("")
         }
@@ -127,9 +127,9 @@ $(document).ready(function(){
         value = isNaN(Number(value)) || !Number(value) ? 1 : Number(value);
         $(this).val(value)
         let currency = $("#currency").val();        
-        if (currency) {
-            let currencyName = currency === 1 ? "USDT" : "USDC";
-            $("#convert").val(`${value} ${currencyName} - ${value * 0.6} BT`)
+        if (currency) {            
+            let currencyName = Number(currency) === 1 ? "USDT" : "USDC";
+            $("#convert").val(`${value} ${currencyName} - ${Number(value / 0.6).toFixed(2)} BT`)
         } else {
             $("#convert").val("")
         }    
