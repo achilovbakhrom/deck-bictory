@@ -550,7 +550,7 @@ block content
                             div(class="col-12 col-md-6 content left-content")
                                 div(class="left-title") Send us a message
                                 div(class="right-subTitle") Reach us if you have any questions or suggestions
-                                form(class="needs-validation" action="/auth" method="POST")
+                                form(class="needs-validation" )
                                     input(class="w-100 form-control input", placeholder="Enter name" name="username" required)
                                     input(class="w-100 form-control input", type="email", placeholder="Email address" style="margin-top: 20px;" name="email" required)
                                     textarea(class="w-100 form-control input textarea", placeholder="Type your message to us here" style="margin-top: 20px;" name="message")
@@ -559,7 +559,7 @@ block content
                                             input(type="checkbox" id="chkProdTomove")
                                             span(class="check-box-effect")
                                         label(for="chkProdTomove") Allow us to send you periodical updates.
-                                    button(type="submit", class="btn btn-warning login-button w-100") LOGIN
+                                    button(type="submit", data-dismiss="modal", aria-label="Close" class="btn btn-warning login-button w-100") LOGIN
                             div(class="col-12 col-md-6 content right-content")
                                 div(class="content")
                                     div
