@@ -14,6 +14,13 @@ html, body{
   height: 38px;
 }
 
+.textarea {
+  padding: 10px 20px;
+  min-height: 120px;
+  height: auto;
+  border-radius:9px;
+}
+
 .select {
   border-radius: 9px;
   height: 38px;
@@ -855,5 +862,192 @@ a {
 .m-w-85 {
   max-width: 85%;
 }
-/* admin-users */
 
+.contact-us__modal .modal-header {
+  justify-content: flex-end;
+  padding: 0;
+  border: none;
+}
+.contact-us__modal .modal-content {
+  padding: 53px 99px;
+  border: none;
+}
+.contact-us__modal .modal-header .close {
+  width: 36px;
+  height: 36px;
+}
+
+.contact-us__modal .contents .right-content {
+  padding: 20px 0 20px 40px;
+}
+
+.contact-us__modal .contents .right-content .content{
+  background: #022436;
+  width: 100%;
+  height: 100%;
+  padding: 36px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #BDBDBD;
+}
+
+.contact-us__modal .contents .right-content .content .socials{
+  display: flex;
+  flex-direction: row;
+  gap: 12px 10px;
+  flex-wrap: wrap;
+}
+
+.contact-us__modal .contents .right-content .content .join-text{
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+.right-content .content .email-message span{
+  margin-left: 7px;
+}
+
+.contact-us__modal .contents .left-title {
+  color: #02002B;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.contact-us__modal .contents .left-subTitle {
+  color: #02002B;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-us__modal .contents .right-title {
+  color: #EEB31D;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 7px;
+}
+
+.contact-us__modal .contents .right-subTitle {
+  line-height: 22px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+
+.contact-us__modal  .input:focus {
+  box-shadow: none;
+  border: 1px solid #3BF1A5;
+}
+.contact-us__modal .login-button {
+  background: linear-gradient(
+    93.78deg, #FFA903 0, rgba(255, 255, 255, 0.4) 50.53%, #FFA903 80%), #EEB31D;
+  background-color: #FFA903;
+}
+
+.contact-us__modal input {
+  height: 45px;
+  padding: 10px 20px;
+}
+/* admin-users */
+.checkbox-effect-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 17px;
+}
+.checkbox-effect-box label {
+  cursor: pointer;
+}
+label.check-box-effect-label {
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+}
+
+label.check-box-effect-label .check-box-effect {
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #dcdcdc;
+  border-radius: 10%;
+}
+
+label.check-box-effect-label .check-box-effect:before {
+  content: "";
+  width: 0px;
+  height: 2px;
+  border-radius: 2px;
+  background: #626262;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 10px;
+  left: 8px;
+  transition: width 50ms ease 50ms;
+  transform-origin: 0% 0%;
+}
+
+label.check-box-effect-label .check-box-effect:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: #626262;
+  position: absolute;
+  transform: rotate(305deg);
+  top: 14px;
+  left: 9px;
+  transition: width 50ms ease;
+  transform-origin: 0% 0%;
+}
+
+label.check-box-effect-label:hover .check-box-effect:before {
+  width: 5px;
+  transition: width 100ms ease;
+}
+
+label:hover .check-box-effect:after {
+  width: 10px;
+  transition: width 150ms ease 100ms;
+}
+
+.check-box-effect-label input[type="checkbox"] {
+  display: none;
+}
+
+.check-box-effect-label input[type="checkbox"]:checked + .check-box-effect {
+  background-color: #EEB31D !important;
+  transform: scale(1.25);
+}
+
+.check-box-effect-label input[type="checkbox"]:checked + .check-box-effect:after {
+  width: 10px;
+  background: #02002B;
+  transition: width 150ms ease 100ms;
+}
+
+.check-box-effect-label input[type="checkbox"]:checked + .check-box-effect:before {
+  width: 5px;
+  background: #02002B;
+  transition: width 150ms ease 100ms;
+}
+
+.check-box-effect-label input[type="checkbox"]:checked:hover + .check-box-effect {
+  background-color: #dcdcdc;
+  transform: scale(1.25);
+}
+
+.check-box-effect-label input[type="checkbox"]:checked:hover + .check-box-effect:after {
+  width: 10px;
+  background: #02002B;
+  transition: width 150ms ease 100ms;
+}
+
+.check-box-effect-label input[type="checkbox"]:checked:hover + .check-box-effect:before {
+  width: 5px;
+  background: #02002B;
+  transition: width 150ms ease 100ms;
+}

@@ -316,7 +316,21 @@ block content
                                         span(class="member-position") Business Development
                                     div(class="member-desc") Obidjon comes from a business and management background, with strong leadership and management ability. He completed his education in International Business at James Cook University, Singapore. He will be tasked with implementing Bictory Finance business plans and growth endeavours within the Euroasian region where he is currently based. As the project's Business Manager for Euroasia, he will utilize his strong network of professionals within the blockchain and cryptocurrency space to achieve company objectives.
 
-
+                        div(class="team-item")
+                            div(class="row")
+                                div(class="col-md-3 d-block")
+                                    div(class="member-image")
+                                        img(src="/images/shakhzod.png")
+                                    div(class="member-links")
+                                        a(target="_blank", href="", class="member-link")
+                                            img(src="/images/twitter-m.png")
+                                        a(target="_blank", href="https://www.linkedin.com/in/shakhzod-ayibjonov/", class="member-link")
+                                            img(src="/images/linked-m.png")
+                                div(class="col-md-9 d-block")
+                                    div(class="member-name") Ayibjonov Shakhzod
+                                        span(class="member-position") Full Stack Developer
+                                    div(class="member-desc") Shakhzod is a versatile, results-driven professional with 3+ years of comprehensive experience developing CRM systems, web sites, SPA, PWA. Proven problem solving and analytical thinking skills, a fast-learning curve, and the ability to adapt to evolving industry trends. A dedicated professional with the drive and skill-set to excel in a fast-based javascript developer role enhancing a company's ability to capture profitable markets.
+                        
                         div(class="team-title team-title--green") Advisors
 
                         div(class="team-item")
@@ -442,7 +456,7 @@ block content
                         div(class="col-12 col-md-5")
                             p(class="text- text-justify") You can contact us by clicking the button beside this text to send us an email.
                         div(class="col-12 col-sm-3")
-                            button(class="btn btn-warning") Contact Us
+                            button(class="btn btn-warning", data-toggle="modal", data-target="#exampleModalCenter") Contact Us
                     div(class="resource-wrapper")
                         div(class="resource-links-desc") You can also contact us by reaching out to any of our socials below.
                         div(class="resource-social-list")
@@ -525,3 +539,51 @@ block content
                                         div(class="news-bottom-section")
                                             div(class="news-date") 19/05/2021
                                             div(class="news-resource") Bictory Finance, Medium
+        div(class="contact-us__modal modal fade", id="exampleModalCenter", tabindex="-1", role="dialog", aria-labelledby="exampleModalCenterTitle", aria-hidden="true")
+            div(class="modal-dialog modal-dialog-centered modal-xl", role="document")
+                div(class="modal-content")
+                    div(class="modal-header")
+                        button(type="button", class="close btn float-right", data-dismiss="modal", aria-label="Close")
+                            img(src="/images/close.svg")
+                    div(class="modal-body")
+                        div(class="row contents")
+                            div(class="col-12 col-md-6 content left-content")
+                                div(class="left-title") Send us a message
+                                div(class="right-subTitle") Reach us if you have any questions or suggestions
+                                form(class="needs-validation" action="/auth" method="POST")
+                                    input(class="w-100 form-control input", placeholder="Enter name" name="username" required)
+                                    input(class="w-100 form-control input", type="email", placeholder="Email address" style="margin-top: 20px;" name="email" required)
+                                    textarea(class="w-100 form-control input textarea", placeholder="Type your message to us here" style="margin-top: 20px;" name="message")
+                                    div(class="checkbox-effect-box")
+                                        label(class="check-box-effect-label")     
+                                            input(type="checkbox" id="chkProdTomove")
+                                            span(class="check-box-effect")
+                                        label(for="chkProdTomove") Allow us to send you periodical updates.
+                                    button(type="submit", class="btn btn-warning login-button w-100") LOGIN
+                            div(class="col-12 col-md-6 content right-content")
+                                div(class="content")
+                                    div
+                                        div(class="right-title") Contact Information
+                                        div(class="right-subTitle") Bictory is an Interoperable decentralized, Custodial exchange and decentralized crowdfunding platform on Concordium, coming soon to Ethereum, Polkadot, Solana. 
+                                        div(class="email-message")
+                                            img(src="/images/message.svg")
+                                            span(class="ml-3") business@bictory.io
+                                    div
+                                        div(class="join-text") Join our community
+                                        div(class="socials")
+                                            a(href="https://t.me/BictoryFinance")
+                                                img(src="/images/telegram-s.png", onmouseover="this.src='/images/telegram-header.png';", onmouseout="this.src='/images/telegram-s.png';")
+                                            a(href="https://twitter.com/Bictory_finance")
+                                                img(src="/images/twitter-s.png", onmouseover="this.src='/images/twitter-header.png';", onmouseout="this.src='/images/twitter-s.png';") 
+                                            a(href="http://linkedin.com/in/joha-j-sulaymonov-523299117")
+                                                img(src="/images/inst-s.png", onmouseover="this.src='/images/inst-header.png';", onmouseout="this.src='/images/inst-s.png';")
+                                            a(href="https://bictory-finance.medium.com/")
+                                                img(src="/images/medium-s.png", onmouseover="this.src='/images/medium-header.png';", onmouseout="this.src='/images/medium-s.png';")
+                                            a(href="https://www.reddit.com/user/Bictoryfinance")
+                                                img(src="/images/child-s.png", onmouseover="this.src='/images/child-header.png';", onmouseout="this.src='/images/child-s.png';") 
+                                            a(href="https://discord.gg/sk6jBEcP")
+                                                img(src="/images/discord-s.png", onmouseover="this.src='/images/discord-header.png';", onmouseout="this.src='/images/discord-s.png';") 
+                                            a(href="mailto:Marketing@bictory.io")
+                                                img(src="/images/mail-s.png", onmouseover="this.src='/images/mail-header.png';", onmouseout="this.src='/images/mail-s.png';") 
+                                            a(href="https://bictory.io/")
+                                                img(src="/images/web-s.png", onmouseover="this.src='/images/web-header.png';", onmouseout="this.src='/images/web-s.png';")  
