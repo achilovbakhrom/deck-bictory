@@ -66,6 +66,8 @@ a {
   line-height: 36px;
   font-size: 32px;
   margin-top: 80px;
+  position: relative;
+  z-index: 9;
 }
 
 .login-content__left p {
@@ -73,6 +75,8 @@ a {
   line-height: 36px;
   font-size: 16px;
   margin-top: 20px;
+  position: relative;
+  z-index: 9;
 }
 
 .login-content__left .bottom_img {
@@ -892,7 +896,7 @@ a {
   color: #BDBDBD;
 }
 
-.contact-us__modal .contents .right-content .content .socials{
+.socials{
   display: flex;
   flex-direction: row;
   gap: 12px 10px;
@@ -938,7 +942,9 @@ a {
   box-shadow: none;
   border: 1px solid #3BF1A5;
 }
-.contact-us__modal .login-button {
+.linear-button {
+  font-weight: 700;
+  height: 50px;
   background: linear-gradient(
     93.78deg, #FFA903 0, rgba(255, 255, 255, 0.4) 50.53%, #FFA903 80%), #EEB31D;
   background-color: #FFA903;
@@ -1050,4 +1056,62 @@ label:hover .check-box-effect:after {
   width: 5px;
   background: #02002B;
   transition: width 150ms ease 100ms;
+}
+
+.submit-success {
+  background-color: #05041F;
+  width: 100%;
+  min-height: 100vh;
+  padding: 45px 90px 0;
+  position: relative;
+  z-index: 0;
+  color: #fff;
+  flex-direction: column;
+}
+
+.submit-success .wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../images/wave.svg");
+  background-size: 100% auto;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+.submit-success .logo {
+  width: 192px;
+  position: absolute
+}
+.submit-success .logo img {
+  width: 100%;
+  height: auto;
+}
+
+.submit-success .content {
+  max-width: 380px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.submit-success .content .content-img {
+  width: 283px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.submit-success .content h2 {
+  font-weight: 600;
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+
+.submit-success .content p {
+  color: #F0F0F0;
+  font-size: 13px;
+  margin-bottom: 40px;
 }
