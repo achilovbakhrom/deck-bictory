@@ -1,3 +1,3 @@
-setTimeout(() => {
-    window.location = "/main";
-}, 2000)
+backMain = () => {
+     window.location = "/main";
+}
