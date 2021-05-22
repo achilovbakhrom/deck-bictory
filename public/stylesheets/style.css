@@ -95,6 +95,8 @@ a {
 .login-content__right > div {
   margin: 0 130px;
   padding-bottom: 50px;
+  position: relative;
+  z-index: 5;
 }
 
 .login-content__right .bottom_img {
@@ -102,6 +104,7 @@ a {
   bottom: 0;
   right: 0;
   left: 0;
+  z-index: 0
 }
 
 
@@ -385,6 +388,7 @@ a {
 .token-chart img{
   width: 100%;
   position: relative;
+  max-height: 600px;
 }
 .team-section{
   margin-top: 25px;
@@ -393,7 +397,9 @@ a {
   margin-bottom: 80px;
 }
 .member-image img{
-  max-width: 100%;
+  max-width: 201px;
+  width: 201px;
+  height: auto;
   border-radius: 50%;
 }
 .member-image{
