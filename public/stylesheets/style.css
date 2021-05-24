@@ -152,38 +152,81 @@ a {
   font-weight: 400;
   font-style: italic;
   font-size: 18px;
-  line-height: 36px;
   color: #393939;
   position: relative;
   cursor: pointer;  
-  
+  padding: 7px 0;
+  margin: 3px 0;
 }
 
 .main-container__menu ul li::before {
   content: "";
   position: absolute;
-  bottom: 5px;
-  height: 13px;
+  top: 9px;
+  height: 21px;
   left: 0;
   right: 0;
-  background-color: #DE50BF;
+  background-color: #00ffa5;
   opacity: 0.08;
   z-index: -1;
   transition: all 400ms;
 }
 
-.main-container__menu ul .active::before {  
-  /* background-color: red; */
-  right: 50%;
+.main-container__menu ul li div {
+  position: relative;
+  width: 100%;
+  transition: all 400ms;
+  display: inline-block;
+}
+.main-container__menu ul li span {
+  position: absolute;
+  top: 0px;
+  height: 21px;
+  left: 0;
+  /* width: 100%; */
+  background-color: #00ffa5;
+  opacity: 0.08;
+  z-index: -2;
+  transition: all 400ms;
+  transition-delay: 100ms;
+}
+.main-container__menu ul .active div {
+  width: auto;
+  transition: all 400ms;
+
+}
+.main-container__menu ul li:hover div {
+  transition: all 400ms;
+  width: auto;
+}
+.main-container__menu ul li:hover div span {
+  width: calc(100% + 2px);
   background-color: #FFB703;
   opacity: 1;  
+  transition-delay: 100ms;
+  transition: all 400ms;
+}
+.main-container__menu ul .active span {  
+  width: calc(100% + 2px);
+  background-color: #FFB703;
+  opacity: 1; 
+  transition: all 400ms;
+  transition-delay: 100ms;
+}
+.main-container__menu ul .active::before {  
+  /* background-color: red; */
+  right: 80%;
+  background-color: transparent;
+  opacity: 1; 
+  transition: all 400ms;
 }
 
 
 .main-container__menu ul li:hover::before {  
-  right: 50%;
-  background-color: #FFB703;
+  right: 80%;
+  background-color: transparent;
   opacity: 1;  
+  transition: all 400ms;
 }
 
 .main-content {
@@ -217,7 +260,7 @@ a {
   position: relative;
   margin-left: 70px;
   margin-top: 20px;
-  width: auto;
+  width: 180px;
 }
 
 .main-content__header .icon {
@@ -778,7 +821,7 @@ a {
   justify-content: center;
 }
 .header-logo-wrapper img {
-  width: 100%;
+  width: 180px;
   height: auto;
 }
 .header-right-content{
