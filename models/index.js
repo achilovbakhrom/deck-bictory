@@ -23,6 +23,7 @@ db.role = require("./role")(sequelize, Sequelize);
 db.currency = require("./currency")(sequelize, Sequelize);
 db.nationality = require("./nationality")(sequelize, Sequelize);
 db.message = require("./message")(sequelize, Sequelize);
+db.homeEmail = require("./homeEmail")(sequelize, Sequelize);
 
 db.role.belongsToMany(db.user, {
   through: "user_roles",
