@@ -4,6 +4,7 @@ const db = require("../models");
 const User = db.user;
 const Role = db.role;
 const Op = db.Sequelize.Op;
+const homeEmail = db.homeEmail;
 var jwt = require("jsonwebtoken");
 var bcrypt = require("bcryptjs");
 const { authJwt } = require("../middlewares");
@@ -148,6 +149,31 @@ router.post("/signup", function(req, res, next) {
     });
 });
 
+router.post("/home-email", function(req, res, next) {
+  homeEmail.create({
+    email: req.body.email,
+    value: '',
+  })
+    .then(() => {
+      res.send({ message: "Subscribed Successfully"});
+    })
+    .catch(err => {
+      res.status(500).send({ message: err.message });
+    })
+})
+
+router.get("/home-email", function(req, res, next) {
+  let page = req.query ? req.query.page || 0 : 0;
+  let size = req.query ? req.query.size || 2000 : 2000;
+
+  db.homeEmail.findAndCountAll({
+    offset: page,
+    limit: size
+  }).then(data => {
+    res.send(data);
+  })
+})
+
 router.get("/main", [authJwt.verifyToken], function(req, res, next) {
   res.render('main');
 });
@@ -243,7 +269,6 @@ router.post("/create-user", [authJwt.verifyToken, authJwt.isAdmin], function(req
       res.status(500).send({ message: err.message });
     });
 });
-
 router.post("/delete-user", [authJwt.verifyToken, authJwt.isAdmin], function(req, res, next) {
   User.create({
     username: req.body.username,    
