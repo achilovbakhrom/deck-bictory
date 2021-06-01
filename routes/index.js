@@ -149,12 +149,10 @@ router.post("/signup", function(req, res, next) {
     });
 });
 
-router.post("/home-email", function(req, res, next) {
-  homeEmail.create({
-    email: req.body.email,
-    value: '',
-  })
-    .then(() => {
+router.post("/home-email", function(req, res) {
+  homeEmail.create(req.body)
+    .then((r) => {
+      console.log("test", r)
       res.send({ message: "Subscribed Successfully"});
     })
     .catch(err => {
@@ -162,7 +160,7 @@ router.post("/home-email", function(req, res, next) {
     })
 })
 
-router.get("/home-email", function(req, res, next) {
+router.get("/home-email", function(req, res) {
   let page = req.query ? req.query.page || 0 : 0;
   let size = req.query ? req.query.size || 2000 : 2000;
 
