@@ -388,6 +388,18 @@ a {
   align-items: center;
 }
 
+.table-cell span {
+  color: #00079D; 
+}
+
+.head-table {
+  min-height: 52px;
+}
+.head-table .table-cell {
+  text-align: center;
+  color: #fff;
+  background: #02002B;
+}
 
 .table-cell-border {
   border-right: 1px solid #FFFFFF6C;
@@ -396,7 +408,10 @@ a {
 /*  main end  */
 
 /*  submit-form  */
-
+.img-tokenEmission {
+  width: 100%;
+  height: auto;
+}
 .submit-form {}
 
 .submit-form-left {
