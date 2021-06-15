@@ -474,6 +474,12 @@ a {
   column-gap: 30px;
   flex-wrap: wrap;
 }
+.respective-position{
+  color: #595959;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
 .member-position{
   color: #FFB703;
   font-size: 16px;
